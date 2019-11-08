@@ -397,7 +397,7 @@ func (n *EvalMaybeTainted) Eval(ctx EvalContext) (interface{}, error) {
 	change := *n.Change
 	err := *n.Error
 
-	// nothing to do if everythig went as planned
+	// nothing to do if everything went as planned
 	if err == nil {
 		return nil, nil
 	}
