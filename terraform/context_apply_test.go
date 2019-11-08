@@ -10946,7 +10946,7 @@ func TestContext2Apply_taintedDestroyFailure(t *testing.T) {
 
 	state, diags = ctx.Apply()
 	if !diags.HasErrors() {
-		t.Fatal("expecetd error")
+		t.Fatal("expected error")
 	}
 
 	root = state.Module(addrs.RootModuleInstance)
